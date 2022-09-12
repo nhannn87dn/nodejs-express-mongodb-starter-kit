@@ -1,0 +1,3 @@
+{"level":"error","message":"ERROR 💥: ","service":"nodejs-starter-kit-service","timestamp":"2022-08-19 16:13:40"}
+{"level":"error","message":"ERROR :: StatusCode: 404, Message: API not Found","service":"nodejs-starter-kit-service","timestamp":"2022-08-19 16:15:51"}
+{"level":"error","message":"ERROR :: StatusCode: 404, Message: API not Found","service":"nodejs-starter-kit-service","timestamp":"2022-08-19 16:18:27"}

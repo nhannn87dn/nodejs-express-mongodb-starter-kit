@@ -1,0 +1,44 @@
+# get Ver API
+GET http://localhost:3001/api/v1 HTTP/1.1
+###
+POST http://localhost:3001/api/v1/auth/logout HTTP/1.1
+###
+# login valid
+POST http://localhost:3001/api/v1/auth HTTP/1.1
+content-type: application/json
+
+{
+    "email": "congdong@gmail.com",
+    "password": "Congdong123456@*"
+}
+
+###
+###
+# login valid
+POST http://localhost:3001/api/v1/auth HTTP/1.1
+content-type: application/json
+
+{
+    "email": "nhannn87dn@gmail.com",
+    "password": "Ngocnhan87dn@*"
+}
+
+###
+# login invalid email
+POST http://localhost:3001/api/v1/auth HTTP/1.1
+content-type: application/json
+
+{
+    "email": "nhannn87dndd@gmail.com",
+    "password": "Ngocnhan87dn@*"
+}
+
+###
+# login invalid pass
+POST http://localhost:3001/api/v1/auth HTTP/1.1
+content-type: application/json
+
+{
+    "email": "nhannn87dn@gmail.com",
+    "password": "Ngocnhan87dn@*s"
+}

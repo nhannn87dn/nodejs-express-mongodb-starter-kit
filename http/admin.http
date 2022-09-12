@@ -1,0 +1,38 @@
+# get Ver API
+GET http://localhost:3001/api/v1 HTTP/1.1
+###
+#get  user by id
+GET http://localhost:3001/api/v1/users/631c3fe8ed193981c34c47ce HTTP/1.
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFjM2ZlOGVkMTkzOTgxYzM0YzQ3Y2UiLCJlbWFpbCI6Im5oYW5ubjg3ZG5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjYyOTc4MDY4fQ.jlLARTjkKaelxVrH9l4_8qu2VyOMNnmALeHWDpjQrwQ
+###
+
+GET http://localhost:3001/api/v1/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFjM2ZlOGVkMTkzOTgxYzM0YzQ3Y2UiLCJlbWFpbCI6Im5oYW5ubjg3ZG5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjYyOTc4MDY4fQ.jlLARTjkKaelxVrH9l4_8qu2VyOMNnmALeHWDpjQrwQ
+
+###
+# create new user
+POST http://localhost:3001/api/v1/users HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFjM2ZlOGVkMTkzOTgxYzM0YzQ3Y2UiLCJlbWFpbCI6Im5oYW5ubjg3ZG5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjYyOTc4MDY4fQ.jlLARTjkKaelxVrH9l4_8qu2VyOMNnmALeHWDpjQrwQ
+
+{
+    "name": "Ngoc Nhan",
+    "email": "nhannn87dn@gmail.com",
+    "password": "Ngocnhan87dn@*",
+    "role": "admin",
+    "isEmailVerified": true
+}
+###
+# create new user
+POST http://localhost:3001/api/v1/users HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFjM2ZlOGVkMTkzOTgxYzM0YzQ3Y2UiLCJlbWFpbCI6Im5oYW5ubjg3ZG5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjYyOTc4MDY4fQ.jlLARTjkKaelxVrH9l4_8qu2VyOMNnmALeHWDpjQrwQ
+
+{
+    "name": "Cong Dong",
+    "email": "congdong@gmail.com",
+    "password": "Congdong123456@*",
+    "role": "user",
+    "isEmailVerified": false
+}
+###
